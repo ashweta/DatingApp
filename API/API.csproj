@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+
+    <!-- Nullable responsible for string behavior, we disable it-->
+    <Nullable>disable</Nullable>
+
+    <!-- ImplicitUsings remove some of the boiler plates in code (disable-say to Add library manually, just like import statement in angular)-->
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.9" />
+  </ItemGroup>
+
+</Project>
